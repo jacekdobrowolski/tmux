@@ -31,9 +31,9 @@ build_window_format() {
   fi
 
   if [ "$fill" = "all" ]; then
-    local show_number="#[fg=$background,bg=$color]$number"
-    local show_middle_separator="#[fg=$background,bg=$color,nobold,nounderscore,noitalics]$window_middle_separator"
-    local show_text="#[fg=$background,bg=$color]$text"
+    local show_number="#[fg=$background,bg=$color,bold,]$number"
+    local show_middle_separator="#[fg=$background,bg=$color,bold,nounderscore,noitalics]$window_middle_separator"
+    local show_text="#[fg=$background,bg=$color,bold]$text"
 
     if [ "$status_connect_separator" = "yes" ]; then
       local show_left_separator="#[fg=$color,bg=$thm_bg,nobold,nounderscore,noitalics]$window_left_separator"

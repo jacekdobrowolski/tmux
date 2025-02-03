@@ -23,7 +23,7 @@ build_status_module() {
 
   if [ "$status_fill" = "all" ]; then
     local show_icon="#[fg=$thm_bg,bg=$color,nobold,nounderscore,noitalics]$icon "
-    local show_text="#[fg=$thm_bg,bg=$color]$text"
+    local show_text="#[fg=$thm_black,bg=$color]$text"
 
     if [ "$status_connect_separator" = "yes" ]; then
       local show_left_separator="#[fg=$color,nobold,nounderscore,noitalics]$status_left_separator"

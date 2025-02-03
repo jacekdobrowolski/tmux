@@ -5,7 +5,7 @@
 thm_bg="#3C3836"
 thm_fg="#bdae93"
 thm_cyan="#458588"
-thm_black="#3c3836"
+thm_black="#1d2021"
 thm_gray="#3c3836"
 thm_magenta="#b16286"
 thm_pink="#d3869b"
@@ -14,7 +14,9 @@ thm_green="#b8bb26"
 thm_yellow="#fabd2f"
 thm_blue="#8ca598"
 thm_orange="#ef9f76"
-thm_black4="#928374"
+thm_lightgray="#7c6f64"
+thm_lightergray="#928374"
+thm_aqua="#8ec07c"
 
 
 # {"color_01": "#FBF1C7", "color_02": "#CC241D", "color_03": "#98971A", "color_04": "#D79921", "color_05": "#458588", "color_06": "#B16286", "color_07": "#689D6A", "color_08": "#7C6F64", "color_09": "#928374", "color_10": "#9D0006", "color_11": "#79740E", "color_12": "#B57614", "color_13": "#076678", "color_14": "#8F3F71", "color_15": "#427B58", "color_16": "#3C3836", "name": "Gruvbox", "foreground": "#3C3836", "background": "#FBF1C7", "cursor": "#3C3836", "hash": "01060a90ad107aa5025a7eefb3f6dc61b1d11c861bc607b94f334ff6a0f02f27"}

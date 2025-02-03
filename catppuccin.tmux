@@ -75,14 +75,14 @@ main() {
   local pane_border_status pane_border_style \
     pane_active_border_style pane_left_separator pane_middle_separator \
     pane_right_separator pane_number_position pane_format
-  pane_status_enable=$(get_tmux_option "@catppuccin_pane_status_enabled" "no") # yes
+  pane_status_enable=$(get_tmux_option "@catppuccin_pane_status_enabled" "yes") # no
   pane_border_status=$(get_tmux_option "@catppuccin_pane_border_status" "off") # bottom
   pane_border_style=$(get_tmux_option "@catppuccin_pane_border_style" "fg=${thm_gray}")
   pane_active_border_style=$(
     get_tmux_option "@catppuccin_pane_active_border_style" \
       "#{?pane_in_mode,fg=${thm_yellow},#{?pane_synchronized,fg=${thm_magenta},fg=${thm_orange}}}"
   )
-  pane_left_separator=$(get_tmux_option "@catppuccin_pane_left_separator" "█")
+  pgne_left_separator=$(get_tmux_option "@catppuccin_pane_left_separator" " █")
   pane_middle_separator=$(get_tmux_option "@catppuccin_pane_middle_separator" "█")
   pane_right_separator=$(get_tmux_option "@catppuccin_pane_right_separator" "█")
   pane_number_position=$(get_tmux_option "@catppuccin_pane_number_position" "left") # right, left
@@ -116,7 +116,7 @@ main() {
   # status module
   local status_left_separator status_right_separator status_connect_separator \
     status_fill status_modules_left status_modules_right
-  status_left_separator=$(get_tmux_option "@catppuccin_status_left_separator" "")
+  status_left_separator=$(get_tmux_option "@catppuccin_status_left_separator" "█")
   status_right_separator=$(get_tmux_option "@catppuccin_status_right_separator" "█")
   status_connect_separator=$(get_tmux_option "@catppuccin_status_connect_separator" "yes")
   status_fill=$(get_tmux_option "@catppuccin_status_fill" "icon")
@@ -131,7 +131,6 @@ main() {
 
   # modes
   setw clock-mode-colour "${thm_blue}"
-  setw mode-style "fg=${thm_pink} bg=${thm_black4} bold"
 
   tmux "${tmux_commands[@]}"
 }
